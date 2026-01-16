@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For my baby</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ground Decorations -->
+<div class="ground">
+  <div class="flower"></div>
+  <div class="flower"></div>
+  <div class="flower"></div>
+  <div class="flower"></div>
+  <div class="flower"></div>
+  <div class="flower"></div>
+  <div class="flower"></div>
+</div>
+
+
+<!-- SCREEN 1 -->
+<section class="screen active" id="screen1">
+  <div class="screen1-content">
+    <div class="screen1-text">
+      <h1>A little something for my special soul <3 </h1>
+      <button onclick="goToScreen(2)" class="main-btn">start here</button>
+    </div>
+    <div class="screen1-image-container">
+      <img src="./Images/sagong.jpg" alt="Cat with banana" class="screen1-image">
+      <p class="image-text">developed by yours truly</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCREEN 2 -->
+<section class="screen" id="screen2">
+  <h2>SELECT TO CONTINUE</h2>
+
+  <div class="cards">
+    <div class="card" onclick="goToScreen(3)">
+      <div class="card-img">
+        <img src="./Images/akonlng.jpg" alt="Letter" class="card-image">
+      </div>  
+      <p>MESSAGE</p>
+    </div>
+
+    <div class="card" onclick="goToScreen(4)">
+      <div class="card-img">
+        <img src="./Images/pinkspot.jpg" alt="Spotify" class="card-image">
+      </div>
+      <p>PLAYLIST</p>
+    </div>
+
+    <div class="card" onclick="goToScreen(5)">
+      <div class="card-img">
+        <img src="./Images/mimaw.jpg" alt="Story" class="card-image">
+      </div>
+      <p>US</p>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="goToScreen(1)">back</button>
+</section>
+
+<!-- EMPTY SCREENS FOR CONTENT -->
+<section class="screen" id="screen3">
+  <p class="letter-text">Hey, my gentle soul. I wanted to give you something a little special, so I made this flower frame and a playlist just for us. I actually got the idea for the flowers from TikTok, they're made from pipe cleaners, and I just knew they'd look perfect in your room hehe. Making these honestly made me so happy, because I kept imagining your smile when you see them. I hope they bring a little extra light to your day, just like you do for me.<br>
+    <br>
+I hope this gift lasts as long as my love for you which is forever! Hehe, kidding aside, they say nothing lasts forever, but I want to prove to you that a real, long-term love exists in this world full of uncertainties. My heart belongs only to you, and words can't even describe how much you mean to me. I really hope you like what I made for you <3 </p>
+  <button class="back-btn" onclick="goToScreen(2)">back</button>
+</section>
+
+<section class="screen" id="screen4">
+  <h2>PLAYLIST</h2>
+  <a href="https://open.spotify.com/playlist/3hCqEDOmDBE8Ib9Ezi6G99?si=D3qOVYKOTfaPZQLo3oRraA" target="_blank">
+    <img src="Images/meowsic.jpg" alt="Meowsic" class="screen-image">
+  </a>
+  <p class="description">Hey, my gentle soul. I actually made this playlist for us. Every single song in here reminds me of you somehow; whenever I listen to them, I just start daydreaming and making up happy scenarios of us in my head. I picked these really carefully because they just... feel like you. And I know how much you love music, so I really wanted to make one specifically for youI hope you love it as much as I loved putting it together hehe.</p>
+  <button class="back-btn" onclick="goToScreen(2)">back</button>
+</section>
+
+<section class="screen" id="screen5">
+  <h2>US</h2>
+  <div class="story-content">
+    <div class="gif-container">
+      <div class="tenor-gif-embed" data-postid="26864924" data-share-method="host" data-aspect-ratio="1.40969" data-width="100%"><a href="https://tenor.com/view/peach-and-goma-peach-goma-peach-cat-goma-hug-gif-26864924">Peach And Goma Peach Goma Sticker</a>from <a href="https://tenor.com/search/peach+and+goma-stickers">Peach And Goma Stickers</a></div>
+      <p class="gif-label">me hugging u</p>
+    </div>
+    <div class="gif-container">
+      <div class="tenor-gif-embed" data-postid="5711781834381685182" data-share-method="host" data-aspect-ratio="1.77857" data-width="100%"><a href="https://tenor.com/view/hug-love-hi-bye-cat-gif-5711781834381685182">Hug Love GIF</a>from <a href="https://tenor.com/search/hug-gifs">Hug GIFs</a></div>
+      <p class="gif-label">virtual hug for u</p>
+    </div>
+    <div class="gif-container">
+      <div class="tenor-gif-embed" data-postid="4554901245312209227" data-share-method="host" data-aspect-ratio="1.23333" data-width="100%"><a href="https://tenor.com/view/peach-and-goma-hug-love-gif-4554901245312209227">Peach And Goma Hug Sticker</a>from <a href="https://tenor.com/search/peach+and+goma-stickers">Peach And Goma Stickers</a></div>
+      <p class="gif-label">you hugging me</p>
+    </div>
+  </div>
+  <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+  <button class="back-btn" onclick="goToScreen(2)">back</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
